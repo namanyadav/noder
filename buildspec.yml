@@ -11,4 +11,4 @@ phases:
       - echo Build phase completed `date`
 artifacts:
   files:
-    - **/**
+    - '**/*'
