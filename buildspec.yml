@@ -9,3 +9,6 @@ phases:
       - aws s3 sync "./" "s3://pipebucketnaman"
     finally:
       - echo Build phase completed `date`
+artifacts:
+  files:
+    - ./*
