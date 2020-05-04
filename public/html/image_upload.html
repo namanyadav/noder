@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image upload</title>
+</head>
+<body>
+<div class="ui middle aligned center aligned grid container">
+    <div class="ui fluid segment">
+        <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
+
+        <label for="embedpollfileinput" class="ui huge red right floated button">
+            <i class="ui upload icon"></i>
+            Upload image
+        </label>
+        <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
+
+        <label for="embedpollfileinput" class="ui huge green right floated button">
+            <i class="ui upload icon"></i>
+            Upload image
+        </label>
+    </div>
+
+</div>
+</body>
+<style type="text/css">
+    .grid.container {
+        margin-top: 5em;
+    }
+    .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</html>

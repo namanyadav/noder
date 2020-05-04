@@ -1,0 +1,226 @@
+<main class="ui text container">
+<!--    <div class="w3-container medi-yellow">-->
+<!--        <h4>My Events</h4>-->
+<!--    </div>-->
+    <!--<button class="ui toggle button">
+        Vote
+    </button>-->
+
+    <div class="ui grid container equal width padded">
+        <form class="ui form">
+            <div class="field sixteen wide column required">
+                <label class="sixteen wide column">Category</label>
+                <div class="ui equal width padded1 grid padding0 buttongrp">
+                    <div class="column center aligned">
+                        <div class="row">
+                            <button class="sixteen wide column circular ui icon button massive toggle" type="button">
+                                <i class="icon music"></i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <span>Music</span>
+                        </div>
+                    </div>
+
+                    <div class="column center aligned">
+                        <div class="row">
+                            <button class="sixteen wide column circular ui icon button massive toggle" type="button">
+                                <i class="icon food"></i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+
+                    <div class="column center aligned">
+                        <div class="row">
+                            <button class="sixteen wide column circular ui icon button massive toggle" type="button">
+                                <i class="icon paint brush"></i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            Arts & Culture
+                        </div>
+                    </div>
+
+                    <div class="column center aligned">
+                        <div class="row">
+                            <button class="sixteen wide column circular ui icon button massive toggle" type="button">
+                                <i class="icon cocktail"></i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            Parties & Nightlife
+                        </div>
+                    </div>
+
+
+                    <div class="column center aligned">
+                        <div class="row">
+                            <button class="sixteen wide column circular ui icon button massive toggle" type="button">
+                                <i class="icon football ball"></i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            Sports & Wellness
+                        </div>
+                    </div>
+
+                    <div class="column center aligned">
+                        <div class="row">
+                            <button class="sixteen wide column circular ui icon button massive toggle" type="button">
+                                <i class="icon sitemap"></i>
+                            </button>
+                        </div>
+                        <div class="row">
+                            Networking
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="field sixteen wide column required">
+                <label class="sixteen wide column">Event Date</label>
+<!--                <input type="date" name="event_date" placeholder="Event Date">-->
+                <div class="fields">
+                    <div class="eight wide field">
+                        <div class="ui calendar">
+                            <div class="ui input left icon">
+                                <i class="calendar icon"></i>
+                                <input type="text" placeholder="Start Date/Time">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide field">
+                        <div class="ui calendar">
+                            <div class="ui input left icon">
+                                <i class="calendar icon"></i>
+                                <input type="text" placeholder="End Date/Time">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field sixteen wide column required">
+                <label class="sixteen wide column">Organizer</label>
+                <input class="sixteen wide column" type="text" name="organizer" placeholder="Organizer">
+            </div>
+            <div class="field sixteen wide column required">
+                <label class="sixteen wide column">Title</label>
+                <input class="sixteen wide column" type="text" name="title" placeholder="Title">
+            </div>
+            <div class="field sixteen wide column required">
+                <label class="sixteen wide column">Description</label>
+                <!--            <input type="text" name="desc" placeholder="Description">-->
+                <textarea rows="2" name="desc" class="sixteen wide column"></textarea>
+            </div>
+            <div class="field required">
+                <label>Capacity</label>
+                <input type="text" name="capacity" placeholder="Capacity">
+            </div>
+            <div class="inline field required">
+                <label>Pricing 2</label>
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                </div>
+            </div>
+            <div class="field required">
+                <label>Cost ($)</label>
+                <input type="text" name="cost" placeholder="Cost">
+            </div>
+            <div class="field required">
+                <label>Venue</label>
+                <input type="text" name="venue" placeholder="Venue">
+            </div>
+            <div class="field required">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="ui grid">
+        <div class="sixteen wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="three wide column"></div>
+        <div class="four wide column"></div>
+        <div class="two wide column"></div>
+    </div>
+
+
+    <style type="text/css">
+        /* Some basic formatting */
+        code {
+            background-color: #E0E0E0;
+            padding: 0.25em 0.3em;
+            font-family: 'Lato';
+            font-weight: bold;
+        }
+        .container {
+            padding: 5em 0em;
+        }
+        .ui.dividing.header,
+        .first {
+            margin-top: 5em;
+        }
+
+        .ui.dividing.header:first-child {
+            margin-top: 0em;
+        }
+
+        h1,
+        h3 {
+            margin-top: 10em;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+        img + img {
+            margin-top: 0.5em;
+        }
+
+        /* Shows content box (not negative margins) */
+        .grid {
+            position: relative;
+        }
+        .grid1:before {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: #F0F0F0;
+            content: '';
+            width: calc(100% - 2rem);
+            height: calc(100% - 2rem);
+            box-shadow: 0px 0px 0px 1px #DDDDDD inset;
+        }
+        .ui.divided.grid:before,
+        .celled.grid:before {
+            display: none;
+        }
+        .ui.aligned .column:after {
+            display: none !important;
+        }
+        .grid1 .column:not(.row):not(.grid):after {
+            background-color: rgba(86, 61, 124, .15);
+            box-shadow: 0px 0px 0px 1px rgba(86, 61, 124, 0.2) inset;
+            content: "";
+            display: block;
+            min-height: 50px;
+        }
+        @media only screen and (max-width: 768px) {
+            .stackable.grid:before {
+                width: 100%;
+                left: 0em;
+            }
+        }
+    </style>
+</main>
