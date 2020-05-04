@@ -11,5 +11,5 @@ phases:
       - echo Build phase completed `date`
 artifacts:
   files:
-    - ./**
+    - **/**
   discard-paths: yes
